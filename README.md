@@ -14,6 +14,16 @@ This is a starter boilerplate with the Lumen Framework for a REST API.
 
 Clone it and test it first before any production plan.
 
+example endpoint if you installed it on your local machine:
+````
+http://localhost/yourproject/public/auth/register
+
+//and
+
+http://localhost/yourproject/public/v1/bookmarks
+````
+
+
 
 ## License
 

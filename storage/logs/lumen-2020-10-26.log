@@ -1,0 +1,6 @@
+[2020-10-26 08:29:32] local.ERROR: Class 'App\Providers\AppServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'App\\Providers\\AppServiceProvider' not found at /Applications/MAMP/htdocs/bookimaki2/vendor/laravel/lumen-framework/src/Application.php:223)
+[stacktrace]
+#0 /Applications/MAMP/htdocs/bookimaki2/bootstrap/app.php(102): Laravel\\Lumen\\Application->register('App\\\\Providers\\\\A...')
+#1 /Applications/MAMP/htdocs/bookimaki2/artisan(18): require('/Applications/M...')
+#2 {main}
+"} 

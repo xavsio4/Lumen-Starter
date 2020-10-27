@@ -27,7 +27,7 @@ class BookmarkController extends Controller
     public function index(Request $request)
     {
         //$bookmark = Auth::user()->bookmark()->paginate(); //or
-        $bookmark = Auth::user()->bookmark()->get();
+        $bookmark = Auth::user()->bookmark()->orderBy('id', 'desc')->paginate();
         return response()->json(['status' => 'success','result' => $bookmark]);
     }
     

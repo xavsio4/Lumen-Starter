@@ -22,10 +22,11 @@ class CreateBookmarksTable extends Migration
             ->onDelete('cascade');
             $table->string('url');
             $table->string('title');
-            $table->string('description')->nullable();
+            $table->string('description','350')->nullable();
             $table->string('notes')->nullable();
-            $table->string('image')->nullable();
+            $table->text('image')->nullable();
             $table->string('type')->nullable();
+            $table->string('slug')->nullable();
             $table->timestamps();
         });
     }

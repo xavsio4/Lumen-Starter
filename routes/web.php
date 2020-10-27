@@ -22,12 +22,10 @@ $router->group(['prefix' => ''], function () use ($router) {
     $router->post('auth/register', 'AuthController@register');
     $router->post('auth/login', 'AuthController@login');
     $router->post('auth/logout', 'AuthController@logout');
-    
-    $router->get('auth/user', 'UserController@profile');
-    $router->get('auth/users/{id}', 'UserController@singleUser');
-    $router->get('auth/users', 'UserController@allUsers');
+    $router->get('auth/user', 'AuthController@me');
     
     $router->get('v1/bookmarks', 'BookmarkController@index');
+    $router->post('v1/bookmark/create', 'BookmarkController@store');
     
     $router->post('/password/reset-request', 'ResetPasswordController@generateResetToken');
     $router->post('/password/resetpasword',  'ResetPasswordController@resetPassword' );
